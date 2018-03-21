@@ -45,3 +45,9 @@ server.listen(process.env.port || process.env.PORT || 3978, function() {
 
 // escuhar mensajes del usario
 server.post('/api/messages', connector.listen());
+
+//ping
+server.get('/ping', function (req, res, next) {
+   res.send('pong' );
+   next();
+});

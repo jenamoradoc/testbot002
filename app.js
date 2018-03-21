@@ -1,6 +1,9 @@
 var restify = require('restify');
 var builder = require('botbuilder');
 var apiaiRecognizer = require('./apiai_recognizer');
+var express = require('express');
+
+var app = express();
 
 //connector con bootbuilder
 var connector = new builder.ChatConnector({

@@ -25,7 +25,7 @@ var intents = new builder.IntentDialog( {
 
 bot.dialog('/', intents);
 
-intents.matches('somenthing-smart',function(session, args){
+intents.matches('ams-welcome',function(session, args){
     var fulfillment = builder.EntityRecognizer.findEntity(args.entities, 'fulfillment');
     if (fulfillment){
         var speech = fulfillment.entity;
